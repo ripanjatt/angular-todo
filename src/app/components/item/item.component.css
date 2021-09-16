@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    margin: 4px;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+img {
+    height: 148px;
+    object-fit: cover;
+}
+
+button {
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    outline: none;
+    font-weight: 600;
+    background: none;
+    border: none;
+    padding-top: 8px;
+    border-top: 1px solid rgba(60, 60, 60, 0.2);
+}
+
+button:hover {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 64vw;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="card">
+    <img [src]="obj.img" class="card-img-top" alt="task-img">
+    <div class="card-body">
+        <h4 class="card-title">{{obj.title}}</h4>
+        <h6 class="card-text">{{obj.date}}</h6>
+        <p class="card-text">{{obj.desc}}</p>
+        <div class="buttons">
+            <button (click)="delete()">
+                &times;
+            </button>
+        </div>
+    </div>
+</div>
