@@ -8,8 +8,8 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild('title') title: ElementRef;
   @ViewChild('form') form: ElementRef;
+  @ViewChild('title') title: ElementRef;
   @ViewChild('desc') desc: ElementRef;
   @ViewChild('date') date: ElementRef;
   @ViewChild('img') img: ElementRef;
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
       || this.date.nativeElement.value == ""
     ) {
       alert("Required field empty!");
-    } else if(this.img.nativeElement.files[0].size > 409600) {
+    } else if(this.img.nativeElement.value != "" && this.img.nativeElement.files[0].size > 409600) {
       alert("Photo too big!");
     } else {
       document.getElementById("close")?.click();
